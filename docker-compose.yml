@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  mysql-dev:
+    image: mysql:8.0 # Ou 'mysql:latest'
+    container_name: mysql_barber_db
+    environment:
+      MYSQL_ROOT_PASSWORD: RootPassword123! # Senha do root (obrigatório)
+      MYSQL_DATABASE: barberbossdb            # Cria este banco automaticamente
+      MYSQL_USER: admin_user                # Cria um usuário comum
+      MYSQL_PASSWORD: AdminPassword123!     # Senha do usuário comum
+    ports:
+      - "3306:3306" # Mapeia a porta padrão do MySQL
+    volumes:
+      - mysql_data:/var/lib/mysql # Mantém os dados salvos se o contêiner reiniciar
+
+volumes:
+  mysql_data:

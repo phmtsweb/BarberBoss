@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/BarberBoss.API/BarberBoss.API.csproj" />
+    <Project Path="src/BarberBoss.Application/BarberBoss.Application.csproj" />
+    <Project Path="src/BarberBoss.Communcations/BarberBoss.Communcations.csproj" />
+    <Project Path="src/BarberBoss.Domain/BarberBoss.Domain.csproj" />
+    <Project Path="src/BarberBoss.Exceptions/BarberBoss.Exceptions.csproj" />
+    <Project Path="src/BarberBoss.Infrastructure/BarberBoss.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CommonTestUtilities/CommonTestUtilities.csproj" />
+    <Project Path="tests/Validators.Tests/Validators.Tests.csproj" />
+  </Folder>
+</Solution>

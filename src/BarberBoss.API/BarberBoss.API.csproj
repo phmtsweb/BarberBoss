@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>8d53020b-1ea8-4a94-80c2-66b319dd4883</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.14" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.24.2-preview.1" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.19.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BarberBoss.Application\BarberBoss.Application.csproj" />
+    <ProjectReference Include="..\BarberBoss.Communcations\BarberBoss.Communcations.csproj" />
+    <ProjectReference Include="..\BarberBoss.Exceptions\BarberBoss.Exceptions.csproj" />
+    <ProjectReference Include="..\BarberBoss.Infrastructure\BarberBoss.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
